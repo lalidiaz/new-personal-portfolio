@@ -1,0 +1,22 @@
+.portfolioWrapper {
+  width: 100vw;
+
+  h3 {
+    font-size: 24px;
+    font-family: "DM Sans", sans-serif;
+    padding: 50px;
+  }
+  .cardWrapper {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 800px;
+    width: 100vw;
+    justify-content: center;
+
+    @media only screen and (max-width: 667px) {
+      margin: 0px;
+    }
+  }
+}

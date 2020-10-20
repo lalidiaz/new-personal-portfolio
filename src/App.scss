@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cousine:ital@0;1&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background-color: #fffaf4;
+  max-width: 100vw;
+}
+
+.App {
+  display: flex;
+}
+
+h2 {
+  -ms-writing-mode: tb-rl; /* old syntax, IE */
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  -ms-transform: rotate(180deg);
+  max-height: 100vh;
+  padding: 0.5em;
+  text-align: right;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  display: flex;
+  justify-content: center;
+
+  @media only screen and (max-width: 667px) {
+    writing-mode: horizontal-tb;
+    transform: rotate(0);
+  }
+}
