@@ -18,19 +18,37 @@
       font-size: 24px;
       font-family: "DM Sans", sans-serif;
       padding: 50px;
+      font-weight: bold;
 
       @media only screen and (max-width: 667px) {
-        padding: 0px;
-        padding-left: 20px;
+        padding-right: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      svg {
+        padding-right: 5px;
       }
     }
+    @media only screen and (max-width: 667px) {
+      justify-content: end;
+    }
+
     a {
       padding: 50px;
       margin-right: 100px;
       color: black;
+      svg {
+        display: inline-block;
+      }
+
       @media only screen and (max-width: 667px) {
         padding-left: 20px;
         padding: 0px;
+        padding-left: 160px;
       }
     }
   }

@@ -84,7 +84,7 @@ const Cards = () => {
   return(
     <div className='portfolioWrapper'>
       <div className='arrow'>
-        <h3><FcCloseUpMode fontSize={22}/><u>Projects:</u></h3>
+      <h3><FcCloseUpMode fontSize={22}/><u>Projects:</u></h3>
         <Link to='/'>
           <CgArrowLeftO fontSize={50}/>
         </Link>
