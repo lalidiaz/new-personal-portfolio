@@ -2,6 +2,9 @@ import React from 'react';
 import './styles.scss';
 import Card from '../../components/Card/index';
 import { FcCloseUpMode } from 'react-icons/fc';
+import { Link } from 'react-router-dom';
+import { CgArrowLeftO } from 'react-icons/cg';
+
 
 const Cards = () => {
   const Projects = [
@@ -80,8 +83,13 @@ const Cards = () => {
 
   return(
     <div className='portfolioWrapper'>
-      <h3><FcCloseUpMode fontSize={22}/><u>Projects:</u></h3>
-      <div className='cardWrapper'>
+      <div className='arrow'>
+        <h3><FcCloseUpMode fontSize={22}/><u>Projects:</u></h3>
+        <Link to='/'>
+          <CgArrowLeftO fontSize={50}/>
+        </Link>
+      </div>
+     <div className='cardWrapper'>
         
         {Projects.map((project, key) => {
           return (

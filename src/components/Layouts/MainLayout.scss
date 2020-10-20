@@ -5,6 +5,12 @@
   @media only screen and (max-width: 667px) {
     flex-direction: column;
     display: flex;
-    height: 1040px;
+    height: 1080px;
+  }
+
+  @media only screen and (max-width: 1280px) {
+    flex-direction: column;
+    display: flex;
+    height: 1080px;
   }
 }

@@ -14,7 +14,6 @@ class Card extends React.Component {
                     <p className='name1'><strong>{title}</strong><FcNext fontSize={15}/></p>
                     <p className='name2'>{description}</p>
                 </a>
-              
             </div>        
             </>
 

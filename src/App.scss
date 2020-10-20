@@ -33,4 +33,8 @@ h2 {
     writing-mode: horizontal-tb;
     transform: rotate(0);
   }
+  @media only screen and (max-width: 1280px) {
+    writing-mode: horizontal-tb;
+    transform: rotate(0);
+  }
 }
