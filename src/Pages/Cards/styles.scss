@@ -1,14 +1,23 @@
 .portfolioWrapper {
   width: 100vw;
 
+  @media only screen and (max-width: 667px) {
+    height: 1000px;
+  }
+
   .arrow {
+    top: 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    margin-right: 100px;
+    height: 100px;
+    width: 100%;
+    justify-content: space-between;
     h3 {
       font-size: 24px;
       font-family: "DM Sans", sans-serif;
       padding: 50px;
+
       @media only screen and (max-width: 667px) {
         padding: 0px;
         padding-left: 20px;
@@ -22,9 +31,6 @@
         padding-left: 20px;
         padding: 0px;
       }
-    }
-
-    @media only screen and (max-width: 667px) {
     }
   }
 

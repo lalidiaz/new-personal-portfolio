@@ -5,6 +5,8 @@ import Cards from './Pages/Cards/index';
 import { Route, Switch } from 'react-router-dom';
 import MainLayout from './components/Layouts/MainLayout';
 import ProjectsLayout from './components/Layouts/ProjectsLayout';
+import AboutMe from './components/AboutMe/index';
+
 
 function App() {
   return (
@@ -22,7 +24,13 @@ function App() {
             <Cards />
           </ProjectsLayout>
         )} />
+        <Route path='/aboutMe' render={() => (
+          <ProjectsLayout>
+            <AboutMe />
+          </ProjectsLayout>
+        )} />
       </Switch>
+  
     </div>
     </>
   );

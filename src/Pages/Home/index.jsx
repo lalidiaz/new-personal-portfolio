@@ -4,6 +4,7 @@ import Contact from '../../components/Contact/index';
 
 
 
+
 const Home = () => {
   return(
     <>
@@ -13,6 +14,7 @@ const Home = () => {
         <h3>Front End Developer.</h3>
       </section>
       <Contact />
+     
     </>
   )
 }
