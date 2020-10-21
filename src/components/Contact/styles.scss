@@ -3,9 +3,9 @@
   border-radius: 30px;
   font-family: "Cousine", monospace;
   width: 600px;
-  height: 500px; 
-  display: flex; 
-  flex-direction: column; 
+  height: 500px;
+  display: flex;
+  flex-direction: column;
   margin-left: 30px;
   padding: 30px;
   font-size: 18px;
@@ -16,15 +16,15 @@
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 
   @media only screen and (max-width: 667px) {
-    width: 90%; 
+    width: 90%;
     margin-top: 0px;
-    padding: 15px;
+    padding: 10px;
     margin-left: 0px;
     margin-bottom: 30px;
     margin-right: 0px;
-    height: 550px; 
-    display: flex; 
-    justify-content: center; 
+    height: 550px;
+    display: flex;
+    justify-content: center;
   }
 
   .iconsContainer {

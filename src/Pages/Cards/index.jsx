@@ -9,6 +9,11 @@ import back from "../../assets/back.png";
 const Cards = () => {
   const Projects = [
     {
+      title: 'Spotify Clone',
+      description: "React Native + GraphQL",
+      url:'https://github.com/lalidiaz/Spotify-Clone-React-Native'
+    },
+    {
       title: 'CryptoTracker App ',
       description: "React Native",
       url:'https://github.com/lalidiaz/cryptotracker-React-Native'
