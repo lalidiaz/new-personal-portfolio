@@ -3,7 +3,7 @@ import './styles.scss';
 import Card from '../../components/Card/index';
 import { FcCloseUpMode } from 'react-icons/fc';
 import { Link } from 'react-router-dom';
-import { CgArrowLeftO } from 'react-icons/cg';
+import back from "../../assets/back.png";
 
 
 const Cards = () => {
@@ -83,11 +83,14 @@ const Cards = () => {
 
   return(
     <div className='portfolioWrapper'>
-      <div className='arrow'>
-      <h3><FcCloseUpMode fontSize={22}/><u>Projects:</u></h3>
-        <Link to='/'>
-          <CgArrowLeftO fontSize={50}/>
+      <div className="arrow">
+        <Link to="/">
+          <img src={back} alt="" />
         </Link>
+        <div className="projectsContainer">
+          <FcCloseUpMode fontSize={22} />
+          <h3>Projects:</h3>
+        </div>
       </div>
      <div className='cardWrapper'>
         

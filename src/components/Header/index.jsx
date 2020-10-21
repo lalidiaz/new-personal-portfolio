@@ -7,11 +7,9 @@ const Header = () => {
   return(
     <header className='header'>
         <Link to='/projects'>
-          Projects
+        <span className="projectsButton">Projects</span>
         </Link>
-        <Link to='/aboutMe'>
-          About Me
-        </Link>
+
     </header>
    
   )

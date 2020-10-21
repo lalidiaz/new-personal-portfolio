@@ -9,7 +9,6 @@ const MainLayout = (props) => {
  return(
    <div>
      <Header />
-     
      <div className='mainWrapper'>
         {props.children}
      </div>

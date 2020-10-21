@@ -3,27 +3,35 @@
   border-radius: 30px;
   padding: 30px;
   justify-content: center;
+  display: flex;
   width: 600px;
-  height: 400px;
+  height: 500px;
   font-family: "DM Sans", sans-serif;
-  margin-left: 30px;
-  margin-top: 6%;
+  margin-top: 30px;
   flex-direction: column;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 
+  .sideText {
+    display: flex;
+    background-color: blue;
+  }
+
+  .aboutMe {
+    font-size: 18px;
+  }
+
   @media only screen and (max-width: 667px) {
-    width: 100%;
+    width: 90%;
     margin-top: 0px;
-    padding: 0px;
+    padding: 10px;
     margin-left: 0px;
     margin-bottom: 30px;
+    height: 550px;
   }
 
   h1 {
     font-size: 50px;
     align-items: center;
-    margin-top: 25%;
 
     @media only screen and (max-width: 667px) {
       padding: 20px;

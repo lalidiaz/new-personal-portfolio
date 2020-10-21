@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.scss';
-import { FcNext } from 'react-icons/fc';
+import arrow from "../../assets/arrow.png";
 
 class Card extends React.Component {
     render() {
@@ -9,14 +9,15 @@ class Card extends React.Component {
         return (
           <>
             <div className='individualCard'>
-         
                 <a href={url} target='_blank'>
-                    <p className='name1'><strong>{title}</strong><FcNext fontSize={15}/></p>
+                    <p className='name1'>
+                      <strong>{title}</strong>
+                    </p>
+                    <img src={arrow} alt="" />
                     <p className='name2'>{description}</p>
                 </a>
             </div>        
             </>
-
         )
     }
 }

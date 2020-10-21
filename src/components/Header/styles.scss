@@ -2,32 +2,33 @@ header {
   top: 0;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-end; 
   margin-right: 100px;
   height: 100px;
 
-  @media only screen and (max-width: 667px) {
-    padding-left: 160px;
-    margin-right: 5px;
+  .projectsButton {
+    font-size: 18px;
+  }
+
+  @media only screen and (max-width: 1024px) {
+      display: flex;
+      margin-right: 0px;
+      justify-content: center;
   }
 
   a {
     text-decoration: none;
     color: black;
     font-family: "DM Sans", sans-serif;
-    border: 1px solid black;
+    border: 3px solid black;
     border-radius: 30px;
     padding: 10px;
     font-weight: bold;
     font-size: 22px;
-    margin-right: 10px;
 
     @media only screen and (max-width: 667px) {
       justify-content: center;
       align-items: center;
-      font-size: 16px;
-
-      margin-right: 8px;
     }
   }
 }
