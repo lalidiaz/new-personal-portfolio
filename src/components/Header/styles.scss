@@ -2,7 +2,7 @@ header {
   top: 0;
   display: flex;
   align-items: center;
-  justify-content: flex-end; 
+  justify-content: flex-end;
   margin-right: 100px;
   height: 100px;
 
@@ -11,20 +11,32 @@ header {
   }
 
   @media only screen and (max-width: 1024px) {
-      display: flex;
-      margin-right: 0px;
-      justify-content: center;
+    display: flex;
+    margin-right: 0px;
+    justify-content: center;
   }
 
-  a {
-    text-decoration: none;
+  .btn {
+    top: 0;
+    left: 0;
+    transition: all 0.15s linear 0s;
+    position: relative;
+    display: inline-block;
+    padding: 15px 25px;
     color: black;
-    font-family: "DM Sans", sans-serif;
+    box-shadow: 4px 5px;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
     border: 3px solid black;
     border-radius: 30px;
-    padding: 10px;
     font-weight: bold;
     font-size: 22px;
+
+    &:hover {
+      top: 3px;
+      right: -3px;
+      box-shadow: 3px 3px 0 black;
+    }
 
     @media only screen and (max-width: 667px) {
       justify-content: center;

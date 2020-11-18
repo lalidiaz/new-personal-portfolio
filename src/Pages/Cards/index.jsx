@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import back from "../../assets/back.png";
 
 
-const Cards = () => {
+export default function Cards() {
   const Projects = [
     {
       title: 'Spotify Clone',
@@ -90,7 +90,9 @@ const Cards = () => {
     <div className='portfolioWrapper'>
       <div className="arrow">
         <Link to="/">
+        <span href="#" class="btn">
           <img src={back} alt="" />
+          </span>
         </Link>
         <div className="projectsContainer">
           <FcCloseUpMode fontSize={22} />
@@ -98,7 +100,6 @@ const Cards = () => {
         </div>
       </div>
      <div className='cardWrapper'>
-        
         {Projects.map((project, key) => {
           return (
             <Card key={key} project={project} />
@@ -108,5 +109,3 @@ const Cards = () => {
     </div>
   )
 }
-
-export default Cards;

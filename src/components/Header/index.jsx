@@ -3,16 +3,13 @@ import './styles.scss';
 import { Link } from 'react-router-dom';
 
 
-const Header = () => {
+export default function Header() {
   return(
     <header className='header'>
         <Link to='/projects'>
-        <span className="projectsButton">Projects</span>
+          <span href="#" class="btn">Projects</span>
         </Link>
-
     </header>
    
   )
 }
-
-export default Header;

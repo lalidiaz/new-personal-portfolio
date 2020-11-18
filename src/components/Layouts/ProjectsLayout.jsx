@@ -3,8 +3,7 @@ import Footer from '../Footer/index';
 import './ProjectsLayout.scss';
 
 
-
-const ProjectsLayout = (props) => {
+export default function ProjectsLayout(props) {
  return(
    <div>
      <div className='projectWrapper'>
@@ -15,5 +14,3 @@ const ProjectsLayout = (props) => {
 
  )
 }
-export default ProjectsLayout;
-

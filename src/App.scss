@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cousine:ital@0;1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cousine:ital@0;1&display=swap');
 
 html,
 body {
@@ -17,8 +17,6 @@ body {
   height: 100%;
   padding-top: 10px;
   justify-content: center;
-
-  
 }
 
 h2 {
@@ -39,5 +37,19 @@ h2 {
   @media only screen and (max-width: 1280px) {
     writing-mode: horizontal-tb;
     transform: rotate(0);
+  }
+}
+
+.icon:hover {
+  animation: shake 0.1s ease-in-out 0.1s infinite alternate;
+}
+
+@keyframes shake {
+  from {
+    -webkit-transform: rotate(10deg);
+  }
+  to {
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(-10deg);
   }
 }

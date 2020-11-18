@@ -3,8 +3,7 @@ import Footer from '../Footer/index';
 import './AboutMeLayout.scss';
 
 
-
-const AboutMeLayout = (props) => {
+export default function AboutMeLayout(props){
  return(
    <div>     
      <div className='aboutWrapper'>
@@ -15,4 +14,3 @@ const AboutMeLayout = (props) => {
 
  )
 }
-export default AboutMeLayout;

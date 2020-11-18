@@ -4,9 +4,7 @@ import Contact from '../../components/Contact';
 import { FcLikePlaceholder } from 'react-icons/fc';
 
 
-
-
-const Home = () => {
+export default function Home() {
   return(
     <>
     <h2>Nice to meet you</h2>
@@ -26,9 +24,6 @@ const Home = () => {
         </p>
       </section>
       <Contact />
-     
     </>
   )
 }
-
-export default Home;

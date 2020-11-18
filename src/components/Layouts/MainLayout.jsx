@@ -5,7 +5,7 @@ import './MainLayout.scss';
 
 
 
-const MainLayout = (props) => {
+export default function MainLayout(props) {
  return(
    <div>
      <Header />
@@ -17,4 +17,3 @@ const MainLayout = (props) => {
 
  )
 }
-export default MainLayout;
