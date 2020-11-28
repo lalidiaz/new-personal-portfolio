@@ -12,7 +12,7 @@ import Skills from '../../components/Skills';
 export default function Contact() {
   return(
     <section className='contact'>
-      <Skills />
+     
     <div className='iconsContainer'>
     <li>
       <div className='icon'>
@@ -56,6 +56,7 @@ export default function Contact() {
       <p className='mail'>Happy to work remotely and on-site!</p>
       </span>
    </div> 
+   <Skills />
   </section>
   )
 }
