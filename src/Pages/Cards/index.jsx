@@ -14,56 +14,58 @@ export default function Cards() {
       url:'https://github.com/lalidiaz/Spotify-Clone-React-Native'
     },
     {
-      title: 'CryptoTracker App ',
+      title: 'CryptoTracker App',
       description: "React Native",
       url:'https://github.com/lalidiaz/cryptotracker-React-Native'
     },
     {
-      title: ' Recipe App',
+      title: 'Recipe App',
       description: "ReactJs",
       url:'https://food-recipe-app.vercel.app'
     },
     {
-      title: 'Tigram',
+      title: 'Tigram (Instagram Clone)',
       description: "ReactJs",
       url:'https://tigram-app.lalidiaz.vercel.app/'
     },
     {
-
-      title: ' To Do List',
+      title: 'To Do List',
       description: "ReactJs",
       url:'https://react-todolist.lalidiaz.vercel.app/'
     },
     {
-
       title: 'REDUX + REACT - To Do List',
       description: "ReactJs + Redux. ",
       url:'https://todolist-redux.vercel.app'
     },
     {
-  
-      title: 'Devtter ',
+      title: 'Devtter (Twitter Clone)',
       description: "NextJs",
       url:'https://github.com/lalidiaz/devtter-NextJs-hooks-firebase'
     },
     {
-      title: ' Bali Experience',
+      title: 'Previous Personal Portfolio ',
+      description: "ReactJs",
+      url:'https://github.com/lalidiaz/Personal-portfolio-ReactJs'
+    },
+    {
+      title: 'Bali Experience',
       description: 'CSS + HTML',
       url:'https://baliexperience.now.sh/'
     },
     {
-      title: ' Random Cat',
+      title: 'Random Cat',
       description: "Javascript vanilla + CSS + HTML",
       url:'https://fetch-cat-api-apem7ifi6.vercel.app/'
     },
     {
-      title: ' Weather App',
+      title: 'Weather App',
       description: "Javascript vanilla + CSS + HTML",
       url: 'https://app-weather.vercel.app/'
     },
 
     {
-      title: ' Mom Web Page',
+      title: 'Artist Web',
       description: "Javascript vanilla + CSS + HTML",
       url:'https://pagina-mami.lalidiaz.now.sh/'
     },
@@ -71,7 +73,6 @@ export default function Cards() {
       title: 'Dynamic Cards',
       description: "ReactJs",
       url:'https://github.com/lalidiaz/StartUP-ReactJs'
-
     },
     {
       title: 'La Muralla Roja Blog',
@@ -102,7 +103,12 @@ export default function Cards() {
      <div className='cardWrapper'>
         {Projects.map((project, key) => {
           return (
-            <Card key={key} project={project} />
+            <Card 
+              key={key} 
+              title={project.title} 
+              description={project.description}
+              url={project.url}
+              />
           )
         })}
       </div>

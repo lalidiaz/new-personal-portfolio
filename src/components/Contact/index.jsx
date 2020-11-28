@@ -6,10 +6,13 @@ import { SiLinkedin } from 'react-icons/si';
 import { HiOutlineMail, HiLocationMarker } from 'react-icons/hi';
 import { BiWorld } from 'react-icons/bi';
 import '../../App.scss';
+import Skills from '../../components/Skills';
+
 
 export default function Contact() {
   return(
     <section className='contact'>
+      <Skills />
     <div className='iconsContainer'>
     <li>
       <div className='icon'>

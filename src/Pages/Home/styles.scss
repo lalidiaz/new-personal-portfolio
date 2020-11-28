@@ -1,14 +1,13 @@
-
 h2 {
   -ms-writing-mode: tb-rl;
   -webkit-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
   -ms-transform: rotate(180deg);
-  max-height: 100%;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
   display: flex;
   justify-content: center;
+  position: sticky;
 
   @media only screen and (max-width: 667px) {
     writing-mode: horizontal-tb;
@@ -28,7 +27,7 @@ h2 {
   display: flex;
   width: 600px;
   height: 500px;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   margin-top: 30px;
   flex-direction: column;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -62,7 +61,7 @@ h2 {
 
   h3 {
     font-size: 30px;
-    font-family: "Cousine", monospace;
+    font-family: 'Cousine', monospace;
 
     @media only screen and (max-width: 667px) {
       padding-left: 10px;

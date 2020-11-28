@@ -3,10 +3,7 @@ import './styles.scss';
 import arrow from "../../assets/arrow.png";
 
 
-class Card extends React.Component {
-    render() {
-      const { title, description, url } = this.props.project
-
+export default function Card({ title, description, url }){
     return (
       <>
       <div className='individualCard'>
@@ -21,5 +18,4 @@ class Card extends React.Component {
     </>
     )
   }
-}
-export default Card;
+

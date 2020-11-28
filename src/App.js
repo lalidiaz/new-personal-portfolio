@@ -22,7 +22,7 @@ function App() {
         <Route path='/projects' render={() => (
           <ProjectsLayout>
             <Cards />
-          </ProjectsLayout>
+        </ProjectsLayout>
         )} />
       </Switch>
   
