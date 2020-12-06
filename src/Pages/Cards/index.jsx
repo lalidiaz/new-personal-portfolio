@@ -9,6 +9,11 @@ import back from "../../assets/back.png";
 export default function Cards() {
   const Projects = [
     {
+      title: 'Redux Course',
+      description: "React-Redux + Redux Toolkit + Testing with Jest",
+      url:'https://github.com/lalidiaz/Redux-Course',
+    },
+    {
       title: 'Spotify Clone',
       description: "React Native + GraphQL",
       url:'https://github.com/lalidiaz/Spotify-Clone-React-Native'
