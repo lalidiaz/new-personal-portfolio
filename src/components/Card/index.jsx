@@ -1,21 +1,25 @@
 import React from 'react';
 import './styles.scss';
-import arrow from "../../assets/arrow.png";
+import { AiOutlineLink } from 'react-icons/ai';
 
-
-export default function Card({ title, description, url }){
-    return (
-      <>
-      <div className='individualCard'>
-        <a href={url} target='_blank'>
-          <p className='name1'>
-          <strong>{title}</strong>
+export default function Card({ title, description, url, type }) {
+  console.log(type, 'SOY TYPE');
+  return (
+    <>
+      <div className="individualCard">
+        <a href={url} target="_blank">
+          <p className="topic">
+            <strong>
+              {title} <AiOutlineLink size={22} />
+            </strong>
           </p>
-        <img src={arrow} alt="" />
-         <p className='name2'>{description}</p>
+          <div className="content">
+            <p>📓 {type}</p>
+            <p>🛠️</p>
+            <p className="description">{description}</p>
+          </div>
         </a>
-      </div>        
+      </div>
     </>
-    )
-  }
-
+  );
+}

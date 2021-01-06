@@ -1,0 +1,12 @@
+.wrapper-scroll {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  .btn-scroll {
+    width: 50px;
+    cursor: pointer;
+    border: 2px solid #414141;
+    border-radius: 30px;
+    margin-right: 30px;
+  }
+}

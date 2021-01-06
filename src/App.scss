@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cousine:ital@0;1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;700&display=swap');
 html,
 body {
   margin: 0;
@@ -15,9 +15,10 @@ body {
 
 .App {
   display: flex;
+  justify-content: center;
   height: 100%;
   padding-top: 10px;
-  justify-content: center;
+  width: 100%;
 }
 
 h2 {
@@ -30,7 +31,6 @@ h2 {
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
   max-height: 100%;
-
   display: flex;
   justify-content: center;
 

@@ -2,13 +2,14 @@
   background-color: #f2f2f2;
   margin: 20px;
   border-radius: 15px;
-  display: flex;
-  align-items: center;
-  width: 350px;
-  height: 50px;
-  justify-content: center;
-  box-shadow: 0px 4px 10px rgba(148, 148, 148, 0.1);
+
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 200px;
+  height: 238px;
+  background: #f2f2f2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+
   img {
     width: 8px;
   }
@@ -24,22 +25,26 @@
   a {
     text-decoration: none;
     color: black;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-
-    @media only screen and (max-width: 667px) {
-      padding: 20px;
-    }
 
     strong {
-      padding-right: 10px;
+      display: flex;
+      padding: 20px;
+      justify-content: center;
     }
-    .name1 {
-      max-width: 180px;
+    .topic {
+      width: 200px;
+      height: 64px;
+      background: #fbe5e5;
+      border-radius: 15px 15px 0px 0px;
+      margin: 0px;
     }
-    .name2 {
-      padding-left: 15px;
+    .content {
+      text-align: center;
+      font-weight: bold;
+      color: #414141;
+      .description {
+        font-weight: bold;
+      }
     }
   }
 }

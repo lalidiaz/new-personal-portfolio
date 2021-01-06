@@ -6,27 +6,30 @@ import { Route, Switch } from 'react-router-dom';
 import MainLayout from './components/Layouts/MainLayout';
 import ProjectsLayout from './components/Layouts/ProjectsLayout';
 
-
-
 function App() {
   return (
     <>
-    <div className="App">  
-      
-      <Switch>
-        <Route exact path='/' render={()=>(
-          <MainLayout >
-            <Home />
-          </MainLayout>
-        )}/>
-        <Route path='/projects' render={() => (
-          <ProjectsLayout>
-            <Cards />
-        </ProjectsLayout>
-        )} />
-      </Switch>
-  
-    </div>
+      <div className="App">
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={() => (
+              <MainLayout>
+                <Home />
+              </MainLayout>
+            )}
+          />
+          <Route
+            path="/projects"
+            render={() => (
+              <ProjectsLayout>
+                <Cards />
+              </ProjectsLayout>
+            )}
+          />
+        </Switch>
+      </div>
     </>
   );
 }

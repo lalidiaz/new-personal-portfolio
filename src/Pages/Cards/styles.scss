@@ -5,34 +5,68 @@
     height: 100px;
     justify-content: center;
     justify-content: flex-start;
-    .projectsContainer {
-      display: flex;
-      align-items: center;
-      font-size: 24px;
-      font-family: 'DM Sans', sans-serif;
-      margin-left: 20px;
 
-      h3 {
-        margin-left: 10px;
+    .btn {
+      top: 0;
+      left: 0;
+      transition: all 0.15s linear 0s;
+      position: relative;
+      display: inline-block;
+      color: #414141;
+      box-shadow: 4px 5px;
+      text-decoration: none;
+      border: 2px solid #414141;
+      border-radius: 30px;
+      margin-left: 20px;
+      width: 56.51px;
+      height: 56.51px;
+      background: #fffaf5;
+      border: 2px solid #414141;
+
+      &:hover {
+        top: 3px;
+        right: -3px;
+        box-shadow: 3px 3px 0 #414141;
       }
 
+      img {
+        width: 35px;
+        height: auto;
+        padding: 10px;
+      }
+      @media only screen and (max-width: 667px) {
+        padding-left: 20px;
+        padding: 0px;
+      }
+
+      @media only screen and (max-width: 667px) {
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .projectsContainer {
+      display: flex;
+      font-family: 'Source Sans Pro', sans-serif;
+      margin-left: 30px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 35px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #414141;
+
+      h3 {
+        margin-left: 20px;
+      }
       @media only screen and (max-width: 667px) {
         .projectsContainer {
           padding: 0px;
           padding-left: 20px;
           margin-left: 0px;
         }
-      }
-    }
-    a {
-      color: black;
-      img {
-        width: 25px;
-        height: 25px;
-      }
-      @media only screen and (max-width: 667px) {
-        padding-left: 20px;
-        padding: 0px;
       }
     }
   }
@@ -43,34 +77,6 @@
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-  }
 
-  .btn {
-    top: 0;
-    left: 0;
-    transition: all 0.15s linear 0s;
-    position: relative;
-    display: inline-block;
-    padding: 5px 5px;
-    color: black;
-    box-shadow: 4px 5px;
-    text-decoration: none;
-    font-family: 'DM Sans', sans-serif;
-    border: 3px solid black;
-    border-radius: 30px;
-    margin-left: 20px;
-    width: 30px;
-
-    &:hover {
-      top: 3px;
-      right: -3px;
-      box-shadow: 3px 3px 0 black;
-      background-color: #f2f2f2;
-    }
-
-    @media only screen and (max-width: 667px) {
-      justify-content: center;
-      align-items: center;
-    }
   }
 }

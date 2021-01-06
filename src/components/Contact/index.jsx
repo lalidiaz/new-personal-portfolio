@@ -7,56 +7,62 @@ import { HiOutlineMail, HiLocationMarker } from 'react-icons/hi';
 import { BiWorld } from 'react-icons/bi';
 import '../../App.scss';
 import Skills from '../../components/Skills';
-
+import { GiLargePaintBrush } from 'react-icons/gi';
+import ReactTooltip from 'react-tooltip';
 
 export default function Contact() {
-  return(
-    <section className='contact'>
-     
-    <div className='iconsContainer'>
-    <li>
-      <div className='icon'>
-      <a 
-        href="https://github.com/lalidiaz" 
-        target="_blank"
-        >
-          <VscGithub fontSize={40} />
-      </a>
-      </div>
-      </li>
-      <li>
-      <div className='icon'>
-        <a href={Resume} download >
-        <VscFileCode fontSize={40}/>
-        </a>
-        </div>
-      </li>
-      <li>
-      <div className='icon'>
-        <a 
-          href="https://www.linkedin.com/in/laura-diaz-a661a617a/"
-          target="_blank" 
-        >
-        <SiLinkedin fontSize={40}/>
-          </a>
+  return (
+    <section className="contact">
+      <ReactTooltip />
+      <div className="iconsContainer">
+        <li>
+          <div className="icon" data-tip="Github">
+            <a href="https://github.com/lalidiaz" target="_blank">
+              <VscGithub fontSize={45} />
+            </a>
           </div>
         </li>
-    </div>
-  <div className='mailLocation'>
-    <span>
-      <HiOutlineMail fontSize={25}/>
-      <p className='mail'>lauradiaz1586@gmail.com</p>
-      </span>
-    <span>
-      <HiLocationMarker fontSize={25}/>
-      <p className='mail'>Dubai, UAE.</p>
-      </span>
-    <span>
-      <BiWorld fontSize={25}/>
-      <p className='mail'>Happy to work remotely and on-site!</p>
-      </span>
-   </div> 
-   <Skills />
-  </section>
-  )
+        <li>
+          <div className="icon" data-tip="CV">
+            <a href={Resume} download>
+              <VscFileCode fontSize={45} />
+            </a>
+          </div>
+        </li>
+        <li>
+          <div className="icon" data-tip="Linkedin">
+            <a
+              href="https://www.linkedin.com/in/laura-diaz-a661a617a/"
+              target="_blank"
+            >
+              <SiLinkedin fontSize={45} />
+            </a>
+          </div>
+        </li>
+
+        <li>
+          <div className="icon" data-tip="Hobby">
+            <a href="https://www.instagram.com/veralunar/" target="_blank">
+              <GiLargePaintBrush fontSize={45} />
+            </a>
+          </div>
+        </li>
+      </div>
+      <div className="mailLocation">
+        <span>
+          <HiOutlineMail fontSize={25} />
+          <p className="mail">lauradiaz1586@gmail.com</p>
+        </span>
+        <span>
+          <HiLocationMarker fontSize={25} />
+          <p className="mail">Dubai, UAE.</p>
+        </span>
+        <span>
+          <BiWorld fontSize={25} />
+          <p className="mail">Happy to work remotely and on-site!</p>
+        </span>
+      </div>
+      <Skills />
+    </section>
+  );
 }
