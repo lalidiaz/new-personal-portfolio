@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.scss';
 import Card from '../../components/Card/index';
 import { Link } from 'react-router-dom';
-import back from '../../assets/back.png';
+import leftArrow from '../../assets/leftArrow.svg';
 import ScrollToTop from '../../components/ScrollToTop';
 
 export default function Cards() {
@@ -117,7 +117,7 @@ export default function Cards() {
       <div className="arrow">
         <Link to="/">
           <span href="#" className="btn">
-            <img src={back} alt="" />
+            <img src={leftArrow} alt="" />
           </span>
         </Link>
         <div className="projectsContainer">

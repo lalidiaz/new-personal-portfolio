@@ -18,14 +18,14 @@ export default function Contact() {
         <li>
           <div className="icon" data-tip="Github">
             <a href="https://github.com/lalidiaz" target="_blank">
-              <VscGithub fontSize={45} />
+              <VscGithub fontSize={40} />
             </a>
           </div>
         </li>
         <li>
           <div className="icon" data-tip="CV">
             <a href={Resume} download>
-              <VscFileCode fontSize={45} />
+              <VscFileCode fontSize={40} />
             </a>
           </div>
         </li>
@@ -35,7 +35,7 @@ export default function Contact() {
               href="https://www.linkedin.com/in/laura-diaz-a661a617a/"
               target="_blank"
             >
-              <SiLinkedin fontSize={45} />
+              <SiLinkedin fontSize={40} />
             </a>
           </div>
         </li>
@@ -43,22 +43,22 @@ export default function Contact() {
         <li>
           <div className="icon" data-tip="Hobby">
             <a href="https://www.instagram.com/veralunar/" target="_blank">
-              <GiLargePaintBrush fontSize={45} />
+              <GiLargePaintBrush fontSize={40} />
             </a>
           </div>
         </li>
       </div>
       <div className="mailLocation">
         <span>
-          <HiOutlineMail fontSize={25} />
+          <HiOutlineMail fontSize={20} />
           <p className="mail">lauradiaz1586@gmail.com</p>
         </span>
         <span>
-          <HiLocationMarker fontSize={25} />
+          <HiLocationMarker fontSize={20} />
           <p className="mail">Dubai, UAE.</p>
         </span>
         <span>
-          <BiWorld fontSize={25} />
+          <BiWorld fontSize={20} />
           <p className="mail">Happy to work remotely and on-site!</p>
         </span>
       </div>

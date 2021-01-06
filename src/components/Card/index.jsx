@@ -3,7 +3,6 @@ import './styles.scss';
 import { AiOutlineLink } from 'react-icons/ai';
 
 export default function Card({ title, description, url, type }) {
-  console.log(type, 'SOY TYPE');
   return (
     <>
       <div className="individualCard">

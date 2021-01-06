@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './styles.scss';
-import { HiArrowUp } from 'react-icons/hi';
+import topArrow from '../../assets/topArrow.jpeg';
 
 const Scroll = ({ showBelow }) => {
   const [show, setShow] = useState(showBelow ? false : true);
@@ -27,7 +27,7 @@ export default function ScrollToTop() {
   return (
     <div className="wrapper-scroll" onClick={handleClick}>
       <div className="btn-scroll">
-        <HiArrowUp size={50} />
+        <img src={topArrow} />
       </div>
     </div>
   );

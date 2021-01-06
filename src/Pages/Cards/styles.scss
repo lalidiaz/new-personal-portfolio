@@ -11,7 +11,6 @@
       left: 0;
       transition: all 0.15s linear 0s;
       position: relative;
-      display: inline-block;
       color: #414141;
       box-shadow: 4px 5px;
       text-decoration: none;
@@ -20,8 +19,10 @@
       margin-left: 20px;
       width: 56.51px;
       height: 56.51px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background: #fffaf5;
-      border: 2px solid #414141;
 
       &:hover {
         top: 3px;
@@ -51,7 +52,7 @@
       margin-left: 30px;
       font-style: normal;
       font-weight: bold;
-      font-size: 30px;
+      font-size: 24px;
       line-height: 35px;
       display: flex;
       align-items: center;
@@ -77,6 +78,6 @@
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-
+    
   }
 }
