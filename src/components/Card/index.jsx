@@ -10,7 +10,7 @@ export default function Card({ title, description, url, type }) {
         <a href={url} target="_blank">
           <p className="topic">
             <strong>
-              {title} <AiOutlineLink size={22} />
+              {title}. <AiOutlineLink size={22} />
             </strong>
           </p>
           <div className="content">

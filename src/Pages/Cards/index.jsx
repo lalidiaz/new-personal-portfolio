@@ -8,7 +8,7 @@ import ScrollToTop from '../../components/ScrollToTop';
 export default function Cards() {
   const Projects = [
     {
-      title: "Graphic Designer' web ",
+      title: "Graphic Designer' web",
       description: 'NextJs / Material Ui',
       url: 'https://github.com/lalidiaz/FerminGuerreroWeb-NextJs',
       type: 'Freelance Job, in progress.'
