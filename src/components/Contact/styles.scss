@@ -42,11 +42,17 @@
       align-items: center;
 
       p {
+        align-items: center;
+        justify-content: center;
+        display: flex;
         padding-left: 10px;
       }
     }
   }
 
+  a {
+    color: #414141;
+  }
   @media only screen and (max-width: 667px) {
     width: 350px;
     height: auto;

@@ -9,6 +9,7 @@ import '../../App.scss';
 import Skills from '../../components/Skills';
 import { GiLargePaintBrush } from 'react-icons/gi';
 import ReactTooltip from 'react-tooltip';
+import { GoMail } from 'react-icons/go';
 
 export default function Contact() {
   return (
@@ -60,6 +61,14 @@ export default function Contact() {
         <span>
           <BiWorld fontSize={20} />
           <p className="mail">Happy to work remotely and on-site!</p>
+        </span>
+        <span>
+          <a href="mailto:contact@lauradiaz.dev">
+            <p className="mail">
+              <GoMail fontSize={20} />
+              <u>Contac me</u>
+            </p>
+          </a>
         </span>
       </div>
       <Skills />
