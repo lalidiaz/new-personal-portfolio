@@ -47,6 +47,28 @@
         display: flex;
         padding-left: 10px;
       }
+
+      .linkEmail {
+        text-decoration: none;
+        .e-mail {
+          text-decoration: none;
+          font-size: 22px;
+          font-weight: bold;
+          line-height: 1;
+          padding-left: 0px;
+          background-image: linear-gradient(
+            to bottom,
+            transparent 0 50%,
+            hsl(14, 100%, 80%) 50% 100%
+          );
+          background-size: 100% 200%;
+          transition: background-position 200ms;
+
+          &:hover {
+            background-position: 100% 50%;
+          }
+        }
+      }
     }
   }
 

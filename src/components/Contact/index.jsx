@@ -1,15 +1,21 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import Skills from '../../components/Skills';
+import ReactTooltip from 'react-tooltip';
+
+//Styles
 import './styles.scss';
+
+//Assets
 import Resume from '../../assets/LauraDiazCV.pdf';
+
+//Icons
 import { VscGithub, VscFileCode } from 'react-icons/vsc';
 import { SiLinkedin } from 'react-icons/si';
 import { HiOutlineMail, HiLocationMarker } from 'react-icons/hi';
 import { BiWorld } from 'react-icons/bi';
-import '../../App.scss';
-import Skills from '../../components/Skills';
 import { GiLargePaintBrush } from 'react-icons/gi';
-import ReactTooltip from 'react-tooltip';
-import { GoMail } from 'react-icons/go';
+import '../../App.scss';
 
 export default function Contact() {
   return (
@@ -63,11 +69,8 @@ export default function Contact() {
           <p className="mail">Happy to work remotely and on-site!</p>
         </span>
         <span>
-          <a href="mailto:contact@lauradiaz.dev">
-            <p className="mail">
-              <GoMail fontSize={20} />
-              <u>Contac me</u>
-            </p>
+          <a href="mailto:contact@lauradiaz.dev" className="linkEmail">
+            <p className="e-mail">Contact me</p>
           </a>
         </span>
       </div>
